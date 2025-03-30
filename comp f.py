@@ -13,7 +13,7 @@ class Lexer:
         self.valid_characters_pattern = r'[a-zA-Z0-9\s\(\)\{\};\+\-\*\/=<>!\".\\\\]'
         self.error_occurred = False
 
-    def is_valid_identifier(self, token):
+    def is_valid_identifier(self,token):
         return re.match(self.identifier_pattern, token) is not None
 
     def add_current_token(self, current_token):
